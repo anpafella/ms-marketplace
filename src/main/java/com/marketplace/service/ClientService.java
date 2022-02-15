@@ -2,6 +2,7 @@ package com.marketplace.service;
 
 import java.util.List;
 
+import com.marketplace.model.dto.ProductByClientDTO;
 import com.marketplace.model.entity.Client;
 
 public interface ClientService {
@@ -15,4 +16,7 @@ public interface ClientService {
 	Client getById(int id);
 
 	List<Client> getAll();
+	
+	ProductByClientDTO getProductsByClient(Integer clientId, Integer productId);
+	
 }
